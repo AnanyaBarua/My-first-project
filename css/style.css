@@ -1,0 +1,326 @@
+@import url(all.min.css);
+@import url(bootstrap.min.css);
+@import url(normalize.css);
+@import url(bootstrapCerulean.min.css);
+
+
+/*Global CSS*/
+body{
+    padding-top: 100px;
+}
+section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #76a56f;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+}
+/*CSS for Parallax*/
+.parallax1{
+    background: url("../img/background 1.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.parallax2{
+    background: url("../img/backgound 2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.parallax3{
+    background: url("../img/background 3.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.parallax4{
+    background: url("../img/background4.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+/*CSS for About*/
+#about{
+    background-image: url("../img/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#aboutDescription .container .row .col-6 h2 {
+    padding-top: 30px;
+}
+
+#aboutDescription .container .row .col-6 h5 {
+    padding-top: 20px;
+}
+
+#aboutDescription .container .row .col-6 img {
+    padding-top: 30px;
+}
+
+#aboutDescription .container .row .col-6 p {
+    padding-top: 10px;
+}
+#meetOurTeam .container h2{
+    padding-bottom: 30px;
+}
+/*CSS for Abouth Us*/
+#abouthUs{
+    background-image: url("../img/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#abouthUs>.container>.row>div{
+    padding: 20px;
+
+}
+#abouthUs>.container>.row>div>div{
+    padding: 20px;
+    background-color: rgba(245,245,245, 0.5);
+}
+#abouthUs>.container>.row>div>div:hover{
+    border: 3px solid #76a56f;
+    background-color: whitesmoke;
+}
+#abouthUs>.container>.row>div>div>.btn:hover{
+    border-radius: 20px;
+    color: #1d1f22;
+    background-color: #72cf78;
+}
+/*CSS For Introducing Section*/
+#introducing>.container>.row>div>img{
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+}
+/*CSS For description Section*/
+#description .container .row div h3 {
+    padding: 15px;
+    color: #76a56f;
+}
+#description .container .row div p {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#description .container .row div img{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+/*CSS for blog*/
+#description .container img {
+    padding-top: 30px;
+}
+#description .container h4 {
+    padding-top: 20px;
+}
+/*CSS for blog*/
+#picture .container figure img{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+#picture .container div h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#picture .container div p{
+    padding-top: 10px;
+}
+#related-product .container div h2{
+    padding-bottom: 20px;
+}
+#subscribe .container div input {
+    padding-right: 50px;
+}
+.slideshow{
+    margin: 0 auto;
+    height: 330px;
+}
+.content{
+    margin: auto;
+    width: 190px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 80px;
+}
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #0b2e13;
+    overflow: hidden;
+    position: absolute;
+}
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translatez(300px);
+}
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg) translatez(300px);
+}
+.shadow{
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px rgba(35, 171, 45, 0.55);
+    border-radius: 2px;
+}
+.content-carousel img{
+    image-rendering:auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+.content-carousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    } to{
+          transform: rotateY(360deg);
+      }
+}
+/*CSS for Sighn Up From Section*/
+#signUpFrom>.container>.row>div:nth-of-type(1)>h3,#signUpFrom>.container>.row>div:nth-of-type(1)>p{
+    color: #72cf78;
+}
+/*CSS for Product By Catagory Section*/
+#productByCatagory>.container>h2{
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+/*CSS for Product By Status Section*/
+#ProductByStatus>.container>div:nth-of-type(1){
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+#ProductByStatus>.container>div:nth-of-type(1)>h4{
+    padding-bottom: 10px;
+}
+#ProductByStatus>.container>.row>div>.card{
+    height: 550px;
+}
+#ProductByStatus>.container>.row>div>div:hover{
+    border: 3px solid #76a56f;
+}
+#ProductByStatus>.container>.row>div>div>div>h4:hover{
+    color: green;
+}
+#ProductByStatus>.container>.row>div>div>div:last-child>button:hover{
+    border-radius: 20px;
+}
+#ProductByStatus>.container>.row>div>div{
+    padding: 20px;
+}
+/*CSS for top-footer*/
+#top-footer {
+    background-color: #d0d0d0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+#top-footer .container .row .col-3 h5{
+    text-transform: uppercase;
+    color: #76a56f;
+    padding-bottom: 20px;
+}
+#top-footer .container .row .col-3 p{
+    color: #101518;
+    padding-bottom: 20px;
+}
+#top-footer .container .row .col-3 div i {
+    color: #101518;
+    padding-bottom: 10px;
+}
+
+/*CSS for footer*/
+footer{
+    background-color: #50b318;
+    padding-top: 32px;
+    padding-bottom: 22px;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    position: relative;
+}
+footer ul li a {
+    color: #FFFFFF;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+}
+footer ul li:first-child a {
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*Responsive Breakpoints*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    html{
+        font-size: 0.8rem;
+    }
+
+
+
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+    html{
+        font-size: 0.9rem;
+    }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 992px) {  }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1200px) { }
+
+
